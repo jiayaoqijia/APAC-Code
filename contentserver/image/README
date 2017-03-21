@@ -1,0 +1,7 @@
+//Generate names (SHA256 value of the content) of resources in fetch.txt; 
+//Generate policy.txt: name,path,label for peer server.
+node generate_hash;
+
+//Copy policy to the dir of server.
+cp policy.txt ~/github/peerjs-server/bin
+
