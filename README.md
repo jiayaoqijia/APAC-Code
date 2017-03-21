@@ -35,20 +35,20 @@ References
 Instructions
 --------------------------------------------------------------------------------
 
-### Requirement: a web server like apache2 is installed already. Assume that the directory for apache2 is `/usr/local/apache2/` and the directory of APAC-code is `~/APAC-code`.
+#### Requirement: a web server like apache2 is installed already. Assume that the directory for apache2 is `/usr/local/apache2/` and the directory of APAC-code is `~/APAC-code`.
 
 ### Setup peer server:
-  $ cd ~/APAC-code/peerserver/bin
-  $ node pserver.js
+    $ cd ~/APAC-code/peerserver/bin
+    $ node pserver.js
 
 ### Setup content server:
-  $ cd /usr/local/apache2/htdocs/pw
-  $ sudo /usr/local/apache2/bin/apachectl start
+    $ cd /usr/local/apache2/htdocs/pw
+    $ sudo /usr/local/apache2/bin/apachectl start
 
 ### Generate resource files:
-  $ cd /usr/local/apache2/htdocs/pw/image
-  $ node generate_hash.js
-  $ cp policy.txt ~/github/peerwebcode/peerserver/bin
+    $ cd /usr/local/apache2/htdocs/pw/image
+    $ node generate_hash.js
+    $ cp policy.txt ~/github/peerwebcode/peerserver/bin
 
 ### Clear data in indexedDB:
-  $ indexedDB.deleteDatabase("peerweb")
+    $ indexedDB.deleteDatabase("peerweb")
